@@ -1,0 +1,43 @@
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Roboto, sans-serif;
+    color: var(--text-color-light);
+    background-color: var(--primary-color);
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .btn {
+    cursor:pointer;
+    font-family: inherit;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    padding: 6px 22px;
+    background-color: var(--accent-color);
+
+    &:hover {
+      background-color: var(--secondary-accent-color);
+    }
+}
