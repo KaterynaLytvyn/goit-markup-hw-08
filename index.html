@@ -58,7 +58,9 @@
                 <li class="mobile-nav__item">
                   <a class="mobile-nav__link link" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li class="mobile-nav__item"><a class="mobile-nav__link link" href="">Контакты</a></li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link" href="">Контакты</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -66,25 +68,27 @@
             <ul class="mobile-contacts list">
               <li class="mobile-contacts__item">
                 <a class="mobile-contacts__link--phone link" href="tel:+380991111111"
-                  >+38 096 111 11 11</a>
+                  >+38 096 111 11 11</a
+                >
               </li>
               <li class="mobile-contacts__item">
                 <a class="mobile-contacts__link--email link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a>
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
             <ul class="mobile-social__list list">
               <li class="mobile-social__item">
-                <a class="mobile-social__link link" href=#>Instagram</a>
+                <a class="mobile-social__link link" href="#">Instagram</a>
               </li>
               <li class="mobile-social__item">
-                <a class="mobile-social__link link" href=#>Twitter</a>
+                <a class="mobile-social__link link" href="#">Twitter</a>
               </li>
               <li class="mobile-social__item">
-                <a class="mobile-social__link link" href=#>Facebook</a>
+                <a class="mobile-social__link link" href="#">Facebook</a>
               </li>
               <li class="mobile-social__item">
-                <a class="mobile-social__link link" href=#>LinkedIn</a>
+                <a class="mobile-social__link link" href="#">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -92,7 +96,7 @@
         <!-- Mobile menu END -->
         <ul class="header-contacts list">
           <li class="header-contacts__item">
-            <a class="header-nav__link link header-contacts__link" href="mailto:info@devstudio.com"
+            <a class="link header-contacts__link" href="mailto:info@devstudio.com"
               ><svg class="header-contacts__icon">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -100,10 +104,9 @@
             >
           </li>
           <li class="header-contacts__item">
-            <a class="header-nav__link link header-contacts__link" href="tel:+380991111111"
+            <a class="link header-contacts__link" href="tel:+380991111111"
               ><svg class="header-contacts__icon">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a
-            >
+                <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -177,30 +180,60 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list what-we-do-list">
             <li class="what-we-do-item">
-              <img
-                src="./images/wdwd_1.jpg"
-                width="370"
-                height="294"
-                alt="человек печатает на клавиатуре"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/wdwd/occ-1-desktop.webp 1x, ./images/wdwd/occ-1-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/wdwd/occ-1-desktop.jpg 1x, ./images/wdwd/occ-1-desktop@2x.jpg 2x"
+                />
+                <img
+                  src="#"
+                  loading="lazy"
+                  alt="человек печатает на клавиатуре"
+                />
+              </picture>
               <p class="what-we-do-text">Десктопные приложения</p>
             </li>
             <li class="what-we-do-item">
-              <img
-                src="./images/wdwd_2.jpg"
-                width="370"
-                height="294"
-                alt="человек работает за ноутбуком"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/wdwd/occ-2-desktop.webp 1x, ./images/wdwd/occ-2-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/wdwd/occ-2-desktop.jpg 1x, ./images/wdwd/occ-2-desktop@2x.jpg 2x"
+                />
+                <img
+                  src="#"
+                  loading="lazy"
+                  alt="человек работает за ноутбуком"
+                />
+              </picture>
               <p class="what-we-do-text">Мобильные приложения</p>
             </li>
             <li class="what-we-do-item">
-              <img
-                src="./images/wdwd_3.jpg"
-                width="370"
-                height="294"
-                alt="человек работает на планшете"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/wdwd/occ-3-desktop.webp 1x, ./images/wdwd/occ-3-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/wdwd/occ-3-desktop.jpg 1x, ./images/wdwd/occ-3-desktop@2x.jpg 2x"
+                />
+                <img
+                  src="#"
+                  loading="lazy"
+                  alt="человек работает на планшете"
+                />
+              </picture>
               <p class="what-we-do-text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -213,12 +246,41 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                class="team-item-image"
-                src="./images/team_1.jpg"
-                width="270"
-                alt="Фото Игоря Демьяненко"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-1-desktop.webp 1x, ./images/team/team-1-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-1-desktop.jpg 1x, ./images/team/team-1-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-1-tablet.webp 1x, ./images/team/team-1-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-1-tablet.jpg 1x, ./images/team/team-1-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/team/team-1.webp 1x, ./images/team/team-1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/team/team-1.jpg 1x, ./images/team/team-1@2x.jpg 2x"
+                />
+                <img
+                  class="team-item-image"
+                  src="#"
+                  loading="lazy"
+                  alt="Фото Игоря Демьяненко"
+                />
+              </picture>
               <div class="team-item-content">
                 <h3 class="team-item-title">Игорь Демьяненко</h3>
                 <p lang="en" class="team-item-text">Product Designer</p>
@@ -255,12 +317,41 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-item-image"
-                src="./images/team_2.jpg"
-                width="270"
-                alt="Фото Ольги Репиной"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-2-desktop.webp 1x, ./images/team/team-2-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-2-desktop.jpg 1x, ./images/team/team-2-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-2-tablet.webp 1x, ./images/team/team-2-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-2-tablet.jpg 1x, ./images/team/team-2-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/team/team-2.webp 1x, ./images/team/team-2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/team/team-2.jpg 1x, ./images/team/team-2@2x.jpg 2x"
+                />
+                <img
+                  class="team-item-image"
+                  src="#"
+                  loading="lazy"
+                  alt="Фото Ольги Репиной"
+                />
+              </picture>
               <div class="team-item-content">
                 <h3 class="team-item-title">Ольга Репина</h3>
                 <p lang="en" class="team-item-text">Frontend Developer</p>
@@ -297,12 +388,41 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-item-image"
-                src="./images/team_3.jpg"
-                width="270"
-                alt="Фото Николая Тарасова"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-3-desktop.webp 1x, ./images/team/team-3-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-3-desktop.jpg 1x, ./images/team/team-3-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-3-tablet.webp 1x, ./images/team/team-3-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-3-tablet.jpg 1x, ./images/team/team-3-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/team/team-3.webp 1x, ./images/team/team-3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/team/team-3.jpg 1x, ./images/team/team-3@2x.jpg 2x"
+                />
+                <img
+                  class="team-item-image"
+                  src="#"
+                  loading="lazy"
+                  alt="Фото Николая Тарасова"
+                />
+              </picture>
               <div class="team-item-content">
                 <h3 class="team-item-title">Николай Тарасов</h3>
                 <p lang="en" class="team-item-text">Marketing</p>
@@ -339,12 +459,41 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-item-image"
-                src="./images/team_4.jpg"
-                width="270"
-                alt="Фото Михаила Ермакова"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-4-desktop.webp 1x, ./images/team/team-4-desktop@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-4-desktop.jpg 1x, ./images/team/team-4-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-4-tablet.webp 1x, ./images/team/team-4-tablet@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-4-tablet.jpg 1x, ./images/team/team-4-tablet@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/team/team-4.webp 1x, ./images/team/team-4@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/team/team-4.jpg 1x, ./images/team/team-4@2x.jpg 2x"
+                />
+                <img
+                  class="team-item-image"
+                  src="#"
+                  loading="lazy"
+                  alt="Фото Михаила Ермакова"
+                />
+              </picture>
               <div class="team-item-content">
                 <h3 class="team-item-title">Михаил Ермаков</h3>
                 <p lang="en" class="team-item-text">UI Designer</p>
@@ -490,14 +639,20 @@
           <p class="footer-text">Подпишитесь на рассылку</p>
           <form action="#" class="footer-form">
             <label class="modal-form-field">
-                <input class="footer-form-input" type="email" name="footer-email" placeholder="E-mail" />
+              <input
+                class="footer-form-input"
+                type="email"
+                name="footer-email"
+                placeholder="E-mail"
+              />
             </label>
-            <button type="submit" class="btn modal-send-btn">Подписаться
+            <button type="submit" class="btn modal-send-btn">
+              Подписаться
               <svg class="footer-form-icon" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
-            </form>
+          </form>
         </div>
       </div>
     </footer>
@@ -538,10 +693,17 @@
             </span>
           </label>
           <label class="modal-form-field modal-textarea-field"
-            >Комментарий<textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
+            >Комментарий<textarea
+              class="modal-form-message"
+              name="user-message"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
           <input type="checkbox" id="accept-policy" class="modal-form-checkbox visually-hidden" />
-          <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю &nbsp; <a href="#" class="modal-form-link">Условия договора</a></label>
+          <label for="accept-policy" class="modal-form-checkbox-label"
+            >Соглашаюсь с рассылкой и принимаю &nbsp;
+            <a href="#" class="modal-form-link">Условия договора</a></label
+          >
           <button type="submit" class="btn modal-send-btn">Отправить</button>
         </form>
       </div>

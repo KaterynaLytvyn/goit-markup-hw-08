@@ -37,9 +37,62 @@
             <li class="header-nav__item"><a class="header-nav__link link" href="">Контакты</a></li>
           </ul>
         </nav>
+        <button type="button" class="burger-btn" data-menu-open>
+          <svg class="burger__icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <!-- Mobile menu START -->
+        <div class="mobile-menu" data-menu>
+          <button type="button" class="mobile-close-btn" data-menu-close>
+            <svg class="mobile-close-icon" width="19px" height="19px">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-nav">
+            <nav>
+              <ul class="mobile-nav__list list">
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link link" href="">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile-contacts">
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link--phone link" href="tel:+380991111111"
+                  >+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link--email link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-social__list list">
+              <li class="mobile-social__item">
+                <a class="mobile-social__link link" href=#>Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link link" href=#>Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link link" href=#>Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link link" href=#>LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Mobile menu END -->
         <ul class="header-contacts list">
           <li class="header-contacts__item">
-            <a class="header-nav__link link header-contacts__link" href="mailto:info@devstudio.com"
+            <a class="link header-contacts__link" href="mailto:info@devstudio.com"
               ><svg class="header-contacts__icon">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -47,7 +100,7 @@
             >
           </li>
           <li class="header-contacts__item">
-            <a class="header-nav__link link header-contacts__link" href="tel:+380991111111"
+            <a class="link header-contacts__link" href="tel:+380991111111"
               ><svg class="header-contacts__icon">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a
             >
@@ -80,7 +133,40 @@
             <li class="portfolio-item">
               <a href="" class="link portfolio-link">
                 <div class="portfolio-item-wrap">
-                  <img src="./images/portfolio_1.jpg" width="370" alt="фото ноутбука" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-1-desktop.webp 1x, ./images/portfolio/works-1-desktop@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-1-desktop.jpg 1x, ./images/portfolio/works-1-desktop@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-1-tablet.webp 1x, ./images/portfolio/works-1-tablet@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-1-tablet.jpg 1x, ./images/portfolio/works-1-tablet@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-1.webp 1x, ./images/portfolio/works-1@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-1.jpg 1x, ./images/portfolio/works-1@2x.jpg 2x"
+                    />
+                    <img
+                      src="#"
+                      loading="lazy"
+                      alt="фото ноутбука"
+                    />
+                  </picture>
                   <p class="portfolio-item-overlay-text">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -96,11 +182,40 @@
             <li class="portfolio-item">
               <a href="" class="link portfolio-link">
                 <div class="portfolio-item-wrap">
-                  <img
-                    src="./images/portfolio_2.jpg"
-                    width="370"
-                    alt="Постер New Orlean vs Golden Star"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-2-desktop.webp 1x, ./images/portfolio/works-2-desktop@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-2-desktop.jpg 1x, ./images/portfolio/works-2-desktop@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-2-tablet.webp 1x, ./images/portfolio/works-2-tablet@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-2-tablet.jpg 1x, ./images/portfolio/works-2-tablet@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-2.webp 1x, ./images/portfolio/works-2@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-2.jpg 1x, ./images/portfolio/works-2@2x.jpg 2x"
+                    />
+                    <img
+                      src="#"
+                      loading="lazy"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <p class="portfolio-item-overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officiis
                     error! Dolor necessitatibus culpa corporis mollitia est. Similique, eligendi
@@ -118,7 +233,40 @@
             <li class="portfolio-item">
               <a href="" class="link portfolio-link">
                 <div class="portfolio-item-wrap">
-                  <img src="./images/portfolio_3.jpg" width="370" alt="Логотип Ресторана Seafood" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-3-desktop.webp 1x, ./images/portfolio/works-3-desktop@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-3-desktop.jpg 1x, ./images/portfolio/works-3-desktop@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-3-tablet.webp 1x, ./images/portfolio/works-3-tablet@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-3-tablet.jpg 1x, ./images/portfolio/works-3-tablet@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-3.webp 1x, ./images/portfolio/works-3@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-3.jpg 1x, ./images/portfolio/works-3@2x.jpg 2x"
+                    />
+                    <img
+                      src="#"
+                      loading="lazy"
+                      alt="Логотип Ресторана Seafood"
+                    />
+                  </picture>
                   <p class="portfolio-item-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde et soluta. Dolore error illo quae eveniet exercitationem nisi recusandae.</p>
                 </div>
                 <div class="portfolio-item-card">
@@ -130,7 +278,40 @@
             <li class="portfolio-item">
               <a href="" class="link portfolio-link">
                 <div class="portfolio-item-wrap">
-                  <img src="./images/portfolio_4.jpg" width="370" alt="фото наушников" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-4-desktop.webp 1x, ./images/portfolio/works-4-desktop@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-4-desktop.jpg 1x, ./images/portfolio/works-4-desktop@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-4-tablet.webp 1x, ./images/portfolio/works-4-tablet@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-4-tablet.jpg 1x, ./images/portfolio/works-4-tablet@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-4.webp 1x, ./images/portfolio/works-4@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-4.jpg 1x, ./images/portfolio/works-4@2x.jpg 2x"
+                    />
+                    <img
+                      src="#"
+                      loading="lazy"
+                      alt="фото наушников"
+                    />
+                  </picture>
                   <p class="portfolio-item-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde et soluta. Dolore error illo quae eveniet exercitationem nisi recusandae.</p>
                 </div>
                 <div class="portfolio-item-card">
@@ -142,7 +323,40 @@
             <li class="portfolio-item">
               <a href="" class="link portfolio-link">
                 <div class="portfolio-item-wrap">
-                  <img src="./images/portfolio_5.jpg" width="370" alt="фото коробочек" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-5-desktop.webp 1x, ./images/portfolio/works-5-desktop@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-5-desktop.jpg 1x, ./images/portfolio/works-5-desktop@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-5-tablet.webp 1x, ./images/portfolio/works-5-tablet@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-5-tablet.jpg 1x, ./images/portfolio/works-5-tablet@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-5.webp 1x, ./images/portfolio/works-5@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-5.jpg 1x, ./images/portfolio/works-5@2x.jpg 2x"
+                    />
+                    <img
+                      src="#"
+                      loading="lazy"
+                      alt="фото коробочек"
+                    />
+                  </picture>
                   <p class="portfolio-item-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde et soluta. Dolore error illo quae eveniet exercitationem nisi recusandae.</p>
                 </div>
                 <div class="portfolio-item-card">
@@ -154,7 +368,40 @@
             <li class="portfolio-item">
               <a href="" class="link portfolio-link">
                 <div class="portfolio-item-wrap">
-                  <img src="./images/portfolio_6.jpg" width="370" alt="фото минитора компьютера" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-6-desktop.webp 1x, ./images/portfolio/works-6-desktop@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-6-desktop.jpg 1x, ./images/portfolio/works-6-desktop@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-6-tablet.webp 1x, ./images/portfolio/works-6-tablet@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-6-tablet.jpg 1x, ./images/portfolio/works-6-tablet@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-6.webp 1x, ./images/portfolio/works-6@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-6.jpg 1x, ./images/portfolio/works-6@2x.jpg 2x"
+                    />
+                    <img
+                      src="#"
+                      loading="lazy"
+                      alt="фото минитора компьютера"
+                    />
+                  </picture>
                   <p class="portfolio-item-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde et soluta. Dolore error illo quae eveniet exercitationem nisi recusandae.</p>
                 </div>
                 <div class="portfolio-item-card">
@@ -168,7 +415,40 @@
             <li class="portfolio-item">
               <a href="" class="link portfolio-link">
                 <div class="portfolio-item-wrap">
-                  <img src="./images/portfolio_7.jpg" width="370" alt="фото разворота издания" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-7-desktop.webp 1x, ./images/portfolio/works-7-desktop@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-7-desktop.jpg 1x, ./images/portfolio/works-7-desktop@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-7-tablet.webp 1x, ./images/portfolio/works-7-tablet@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-7-tablet.jpg 1x, ./images/portfolio/works-7-tablet@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-7.webp 1x, ./images/portfolio/works-7@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-7.jpg 1x, ./images/portfolio/works-7@2x.jpg 2x"
+                    />
+                    <img
+                      src="#"
+                      loading="lazy"
+                      alt="фото разворота издания"
+                    />
+                  </picture>
                   <p class="portfolio-item-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde et soluta. Dolore error illo quae eveniet exercitationem nisi recusandae.</p>
                 </div>
                 <div class="portfolio-item-card">
@@ -182,7 +462,40 @@
             <li class="portfolio-item">
               <a href="" class="link portfolio-link">
                 <div class="portfolio-item-wrap">
-                  <img src="./images/portfolio_8.jpg" width="370" alt="фото логотипа проекта LAB" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-8-desktop.webp 1x, ./images/portfolio/works-8-desktop@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-8-desktop.jpg 1x, ./images/portfolio/works-8-desktop@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-8-tablet.webp 1x, ./images/portfolio/works-8-tablet@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-8-tablet.jpg 1x, ./images/portfolio/works-8-tablet@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-8.webp 1x, ./images/portfolio/works-8@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-8.jpg 1x, ./images/portfolio/works-8@2x.jpg 2x"
+                    />
+                    <img
+                      src="#"
+                      loading="lazy"
+                      alt="фото логотипа проекта LAB"
+                    />
+                  </picture>
                   <p class="portfolio-item-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde et soluta. Dolore error illo quae eveniet exercitationem nisi recusandae.</p>
                 </div>
                 <div class="portfolio-item-card">
@@ -194,11 +507,40 @@
             <li class="portfolio-item">
               <a href="" class="link portfolio-link">
                 <div class="portfolio-item-wrap">
-                  <img
-                    src="./images/portfolio_9.jpg"
-                    width="370"
-                    alt="мужчина печатает на ноутбуке"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-9-desktop.webp 1x, ./images/portfolio/works-9-desktop@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/works-9-desktop.jpg 1x, ./images/portfolio/works-9-desktop@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-9-tablet.webp 1x, ./images/portfolio/works-9-tablet@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/works-9-tablet.jpg 1x, ./images/portfolio/works-9-tablet@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-9.webp 1x, ./images/portfolio/works-9@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="./images/portfolio/works-9.jpg 1x, ./images/portfolio/works-9@2x.jpg 2x"
+                    />
+                    <img
+                      src="#"
+                      loading="lazy"
+                      alt="мужчина печатает на ноутбуке"
+                    />
+                  </picture>
                   <p class="portfolio-item-overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde et soluta. Dolore error illo quae eveniet exercitationem nisi recusandae.</p>
                 </div>
                 <div class="portfolio-item-card">
@@ -276,5 +618,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
